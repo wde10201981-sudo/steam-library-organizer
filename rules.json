@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "overrides": {},
+  "genrePriority": [
+    {"genre": "Racing", "collection": "RACING"},
+    {"genre": "Sports", "collection": "SPORTS"},
+    {"genre": "RPG", "collection": "RPG"},
+    {"genre": "Strategy", "collection": "STRATEGY"},
+    {"genre": "Simulation", "collection": "SIMULATION"},
+    {"genre": "Action", "collection": "ACTION"},
+    {"genre": "Adventure", "collection": "ADVENTURE"},
+    {"genre": "Casual", "collection": "CASUAL"}
+  ]
+}

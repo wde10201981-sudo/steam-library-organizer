@@ -1,0 +1,7 @@
+/local/
+*.bak
+*.tmp
+.env
+.env.*
+cloud-storage-*.json
+*.log
