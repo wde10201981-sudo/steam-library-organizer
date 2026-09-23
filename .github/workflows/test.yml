@@ -5,11 +5,12 @@ permissions:
 jobs:
   test:
     runs-on: windows-latest
-    strategy:
-      matrix:
-        shell: [powershell, pwsh]
     steps:
       - uses: actions/checkout@v4
-      - name: Run synthetic tests
-        shell: ${{ matrix.shell }}
+      - name: Test Windows PowerShell 5.1
+        shell: powershell
+        run: .\tests\Run-Tests.ps1
+      - name: Test PowerShell 7
+        if: ${{ !cancelled() }}
+        shell: pwsh
         run: .\tests\Run-Tests.ps1
